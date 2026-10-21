@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf src/components)",
+      "Bash(rm -f src/views/AboutView.vue src/assets/base.css src/assets/logo.svg)",
+      "Bash(node -e \"console.log\\(JSON.stringify\\(require\\('./package.json'\\).scripts,null,2\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(cd \"c:/Users/x/code/vue/test\" && echo \"=== vue-project vs 原始模板 \\(restore-tmp\\) 差异 ===\" && diff -rq --exclude=node_modules --exclude=dist --exclude=package.json --exclude=package-lock.json --exclude=README.md restore-tmp schoolwork/vue-project 2>&1)",
+      "Read(//c/Users/x/code/vue/test/**)",
+      "Bash(cd \"c:/Users/x/code/vue/test\" && echo \"=== App.vue 差异（预期内）===\" && diff restore-tmp/src/App.vue schoolwork/vue-project/src/App.vue; echo && echo \"=== tsconfig.node.json 差异（我没碰过这个文件）===\" && diff restore-tmp/tsconfig.node.json schoolwork/vue-project/tsconfig.node.json; echo && echo \"=== vue-project 最终结构 ===\" && find schoolwork/vue-project -path '*/node_modules' -prune -o -path '*/dist' -prune -o -type f -print)"
+    ]
+  }
+}

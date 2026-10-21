@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 8px 16px;
+  border: 1px solid #409eff;
+  border-radius: 4px;
+  background: #fff;
+  color: #409eff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+nav button.active {
+  background: #409eff;
+  color: #fff;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: inline-block;
+  width: 110px;
+}
+
+.field input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 160px;
+}
+
+button.submit {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #409eff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tip {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #fff4f4;
+  color: #d93025;
+  border: 1px solid #ffd7d7;
+}
+
+.tip.ok {
+  background: #f0f9eb;
+  color: #529b2e;
+  border-color: #d6edc4;
+}
